@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi primera web</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/706a076b2b.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <header id="encabezado">
+      <h1>Mi Web</h1>
+
+      <label for="check" class="checkbtn">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+
+      <!--<a href="index.html">
+        <i class="fa-solid fa-bars"></i></a>-->
+      <nav class="navbar">
+        <!--<input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fa-solid fa-bars"></i>
+        </label>-->
+        <ul class="menu">
+          <li><a href="">Inicio</a></li>
+          <li><a href="">Acerca de mi</a></li>
+          <li><a href="">Trabajos</a></li>
+          <li><a href="">Servicios</a></li>
+          <li><a href="">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="seccion-principal">
+      <section class="seccion-1">
+        <div class="acerca-de">
+          <h2>Acerca de mí</h2>
+          <p class="parrafo1">
+            ¡Bienvenido a mi página! Aquí, aprenderás más sobre mí.
+          </p>
+          <p class="parrafo2">
+            Me llamo Tere, nací en Buenos Aires y vivo en Caballito. Me gusta
+            el helado y salir a pasear en días de sol. Me encantaría aprender
+            a programar para poder ayudar a las personas a mostrar lo que
+            hacen.
+          </p>
+        </div>
+        <div class="acerca-imagen">
+          <img src="imagen.jpg" alt="imagen personal" />
+        </div>
+      </section>
+      <section class="seccion-2">
+        <img src="spa.jpg" alt="imagen de carrusel" />
+      </section>
+      <div class="trab-container">
+        <div class="trab1-container">
+          <div class="imagen-t">
+            <img src="trab.jpg" alt="trabajo 1" />
+          </div>
+          <div class="texto-t">
+            <h4>Trabajo 1</h4>
+            <p>Este es mi Trabajo 1.</p>
+          </div>
+        </div>
+        <div class="trab1-container">
+          <div class="imagen-t">
+            <img src="trab.jpg" alt="trabajo 2" />
+          </div>
+          <div class="texto-t">
+            <h4>Trabajo 2</h4>
+            <p>Este es mi Trabajo 2.</p>
+          </div>
+        </div>
+        <div class="trab1-container">
+          <div class="imagen-t">
+            <img src="trab.jpg" alt="trabajo 3" />
+          </div>
+          <div class="texto-t">
+            <h4>Trabajo 3</h4>
+            <p>Este es mi Trabajo 3.</p>
+          </div>
+        </div>
+      </div>
+
+      <!--<h2>Trabajo</h2>
+        <div>
+          
+          <section class="seccion-3">
+            <img src="imagen.jpg" alt="imagen personal"/>
+
+          </section>
+          <section class="seccion-3">
+            <img src="imagen.jpg" alt="imagen personal"/>
+
+          </section>
+          <section class="seccion-3">
+            <img src="imagen.jpg" alt="imagen personal"/>
+
+          </section>
+        </div> 
+      -->
+    </main>
+    <footer>
+      <div id="contacto">
+        <h1>Contacto</h1>
+        <p><em>¡Esperamos tu consulta!</em></p>
+
+        <form action="" method="get" class="formulario" id="form">
+          <!--Esto es la caja de nombre-->
+          <div class="form-row">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" />
+          </div>
+          <!--Esto es la caja de correo-->
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="pepe@gmail.com" />
+          </div>
+          <!--Esto es la caja de mensaje-->
+          <div class="form-row">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+          </div>
+          <!--Esto es el boton-->
+          <div class="form-row">
+            <button>Enviar</button>
+          </div>
+          <p class="alertas" id="alertas"></p>
+        </form>
+      </div>
+      <div id="footer">
+        <a href="index.html">
+          <i class="fa-solid fa-bars" style="color: greenyellow;"></i>
+        </a>
+        <h3>Contacto</h3>
+        <nav>
+          <ul>
+            <li><a href>Insta</a></li>
+            <li><a href>Tiki Taka</a></li>
+            <li><a href>Wasa</a></li>
+            <li><a href>Face</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

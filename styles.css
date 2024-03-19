@@ -1,0 +1,404 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: beige;
+}
+
+h3 {
+    color: antiquewhite;
+}
+
+header {
+    display: flex;
+    background-color: aquamarine;
+    align-items: center;
+    /*centra los item*/
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 15em;
+    font-style: normal;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+header a i {
+    color: white;
+    font-size: 2em;
+    padding: 0.5em;
+}
+
+header nav ul {
+    display: flex;
+    gap: 2em;
+}
+
+nav ul.menu li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+header nav ul li a {
+    color: rgb(43, 35, 35);
+}
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: tomato;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.acerca-imagen img {
+    width: 90%;
+}
+
+.acerca-imagen {
+    /*width: 1300px;*/
+    width: 60%;
+    padding-left: 30px;
+    padding-right: 30px;
+    /*padding: 30px;*/
+}
+
+.seccion-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    background-color: azure;
+}
+
+.acerca-de {
+    padding: 30px;
+    width: 40%;
+    text-align: center;
+}
+
+.seccion-2 img {
+    width: 100%;
+}
+
+.texto-t {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.trab-container {
+    display: flex;
+    /*Contenedor flexible*/
+    justify-content: center;
+    /*alinear contenido al centro*/
+    flex-wrap: wrap;
+    /*contenido en orden y si ya no cabe en la pantalla se coloca debajo*/
+    padding: 30px;
+
+}
+
+.trab1-container {
+    display: flex;
+    flex-direction: column;
+    /*contenido se ajusta en columna*/
+    text-align: center;
+    padding: 30px;
+}
+
+.imagen-t img {
+    width: 300px;
+    height: 300px;
+}
+
+/* ------------- Encabezado Contacto ------------- 
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}*/
+
+#contacto {
+    text-align: center;
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+    width: 80%;
+    margin: 0px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contacto h1 {
+    font-size: 30px;
+    margin: 0px;
+}
+
+/* ------------- Formulario ------------- */
+
+.formulario {
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+}
+
+/* ------------- Campos del Formulario ------------- */
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+}
+
+.form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+    width: 100%;
+}
+
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+
+
+    color: #ffffff;
+    background-color: #5995da;
+
+
+    border: none;
+    border-radius: 3px;
+
+
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+
+.form-row button:hover {
+    background-color: #76aeed;
+}
+
+
+.form-row button:active {
+    background-color: #407fc7;
+}
+
+/*----------Div Footer-------------*/
+
+#footer {
+    background-color: darkslategrey;
+}
+
+footer a i.fa-solid.fa-bars {
+    position: fixed;
+    /*para mantener estatico el cuadro*/
+    bottom: 22px;
+    right: 39px;
+    font-size: 1.5em;
+}
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+    header {
+        background-color: blue;
+    }
+
+    h1 {
+        color: beige;
+    }
+
+    .acerca-imagen {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .acerca-imagen img {
+        width: 100%;
+    }
+
+    .acerca-de {
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: center;
+    }
+
+    .seccion-1 {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    .navbar {
+        height: 0vh;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: #2c3e50;
+        text-align: center;
+        transition: all 0.5s;
+        overflow: hidden;
+    }
+
+    .navbar ul.menu {
+        float: none;
+        display: block;
+        /*width: 174px;
+        margin: 0 auto;
+        opacity: 0;*/
+        padding: 0px;
+
+    }
+
+    .navbar ul.menu li a {
+        color: aliceblue;
+    }
+
+    .navbar ul.menu li a:hover {
+        color: #b59a61;
+    }
+
+    /* Menu con JS
+    ACTIVE */
+    .navbar.active {
+        height: 100vh;
+    }
+
+    .navbar.active ul.menu {
+        opacity: 1;
+    }
+
+    nav ul.menu li {
+        display: block;
+    }
+
+    /* Menu con CSS
+
+    .menu {
+        display: none;
+        //para desaparecer el menu
+    }
+
+    .menu{
+        display: flex;
+        position: fixed;
+        width: 100%;
+        height: 100vh; // ocupar todo el largo de la pantalla cuando deslizas
+        background-color: yellowgreen;
+        text-align: center;
+        top: 66px;
+        left: 100%;
+        transition: all 0.9s;
+    }
+   
+    #check:checked ~ ul{
+        left: 0%;
+        display: block;
+    }
+
+    #encabezado nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    #encabezado nav ul li a{
+        font-size: 20px;
+    }
+
+    #check:checked ~ .checkbtn{
+        color: yellowgreen;
+    }
+    */
+}
+
+@media only screen and (min-width: 700px) {
+    #contacto {
+        padding: 20px;
+    }
+
+    .form-row {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .form-row input[type="text"],
+    .form-row input[type="email"] {
+        width: 250px;
+        height: initial;
+    }
+
+    .form-row label {
+        text-align: right;
+        width: 120px;
+        margin-top: 7px;
+        padding-right: 20px;
+    }
+
+    /* Esto es para caja mensaje responsive */
+
+
+    .form-row textarea {
+        width: 250px;
+    }
+
+
+    /* ------------- Para Pantallas de más de 700px ------------- */
+
+
+    .form-row button {
+        margin-left: 120px;
+    }
+}
