@@ -66,6 +66,12 @@ header nav ul li a {
     display: none;
 }
 
+.greeting{
+    background-color: cadetblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+}
+
 .acerca-imagen img {
     width: 90%;
 }
